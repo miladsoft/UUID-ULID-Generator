@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.generator button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #ffffff;
+    background: linear-gradient(45deg, #1e90ff, #00bfff);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.generator button:hover {
+    background: linear-gradient(45deg, #1e90ff, #1e90ff);
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+    word-break: break-all;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+    animation: highlight-animation 1s ease-in-out;
+}
+
+@keyframes highlight-animation {
+    0% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
